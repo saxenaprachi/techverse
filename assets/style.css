@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Mona";
+    src: url('./Mona-Sans/Mona-Sans.ttf');
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --aqua: #94C6FF;
+}
+
+* {
+    font-family: "Mona";
+    color: var(--white);
+    transition: all 1s ease-in-out;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.gradient {
+    background: rgb(68, 118, 255);
+    background: linear-gradient(101deg, rgba(68, 118, 255, 1) 0%, rgba(148, 198, 255, 1) 76%);
+}
+
+nav {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: 0.8rem;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.gradient-button {
+    background: rgb(68, 118, 255);
+    background: linear-gradient(101deg, rgba(68, 118, 255, 1) 0%, rgba(148, 198, 255, 1) 76%);
+    padding: 6px 16px;
+    border-radius: 6px;
+
+}
+
+.tag {
+    border: 2px solid var(--aqua);
+    border-radius: 20px;
+    padding: 4px 30px;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.white-button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 5px;
+}
+
+.white-border-button {
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+}
+
+.gradient-text {
+    font-weight: 500;
+    background: rgb(68, 118, 255);
+    background: linear-gradient(101deg, rgba(68, 118, 255, 1) 0%, rgba(148, 198, 255, 1) 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.back4thfold {
+    background: url('./images/4th\ fold\ banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.psCard {
+    width: 270px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+}
+
+.ps1 {
+    background: url('./images/ps1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ps2 {
+    background: url('./images/ps2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ps3 {
+    background: url('./images/ps3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline {
+    background: url('./images/timelineback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timelineCard {
+    width: 230px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hidd {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
