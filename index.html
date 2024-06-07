@@ -223,7 +223,7 @@
                 const rect = target.getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
                 const centerY = viewportHeight / 2;
-                if (Math.abs(rect.top - centerY) <= 100 || Math.abs(rect.bottom - centerY) <= 100) {
+                if (Math.abs(rect.top - centerY) <= 150 || Math.abs(rect.bottom - centerY) <= 150) {
                     target.classList.add('visible');
                     target.classList.remove('hidd');
                 } else {
