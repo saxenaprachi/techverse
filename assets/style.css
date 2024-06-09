@@ -148,3 +148,7 @@ nav {
 .visible {
     opacity: 1;
 }
+
+.faqs *{
+    color: var(--black);
+}
